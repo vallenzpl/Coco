@@ -16,12 +16,14 @@ public class YieldTest {
 //        t2.interrupt();
 
 
+        //开始测试
         JoinThread t1 = new JoinThread("t1");
         JoinThread t2 = new JoinThread("t2");
         t1.start();
         t2.start();
         t1.join();
         t2.join();
+
         System.out.println("主线程开始执行！");
     }
 }
