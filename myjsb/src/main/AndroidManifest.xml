@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxw.myjsb">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".MainJsbActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="myjsb"
+                    android:scheme="coco" />
+
+            </intent-filter>
+
+
+        </activity>
+
+    </application>
+
+</manifest>
