@@ -12,8 +12,14 @@ public class ConsDemo {
         System.out.println("name: " + name + ",age: " + age);
     }
 
+    private static final String AGENT_DOMESTIC = "&";
+    private static final String AGENT_OVERSEA = "$";
+    private static final String AGENT_ALL = "*";
+
+
     public static void main(String[] args) {
-        tell();
+        String s = "$";
+        System.out.println(s.equals(AGENT_OVERSEA));
     }
 
 }
